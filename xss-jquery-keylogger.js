@@ -7,7 +7,7 @@ function jq(){
 
 function ifrm_kl(){
 	var ifrm = document.createElement("iframe");
-	ifrm.setAttribute("src", "https://www.104.com.tw/login");
+	ifrm.setAttribute("src", "https://www.104.com.tw/jobs/main");
 	ifrm.id = "x";
 	ifrm.style.width = "100%";
 	ifrm.style.height = "100%";
