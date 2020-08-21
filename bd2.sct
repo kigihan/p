@@ -3,7 +3,7 @@
 
 <registration
     description="Empire"
-    progid="Empire"
+    progid="JSRAT"
     version="1.00"
     classid="{20001111-0000-0000-0000-0000FEEDACDC}"
 	>
